@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<body>
+
+
+<div data-ng-app="" data-ng-init="num=12" >
+
+<div data-ng-show="true">Hi I am visible</div>
+<div data-ng-show="myswitch">Hi I am controlled by checkbox</div>
+<div data-ng-show="num < 20">Hi I am controlled by value</div>
+Show? <input type="checkbox" data-ng-model="myswitch">
+
+</div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<body>
+
+
+<div data-ng-app="myapp" data-ng-controller="testctr">
+First Name	<input type="text" data-ng-model="firstname">
+Last Name	<input type="text" data-ng-model="lastname">
+
+You Name is {{firstname+" "+lastname}}
+
+
+</div>
+<script>
+var app = angular.module('myapp',[]);
+app.controller('testctr', function($scope){
+	$scope.firstname = "Sunit";
+	$scope.lastname = "Panwar";
+	console.log($scope.firstname)
+});
+</script>
+</body>
+</html>

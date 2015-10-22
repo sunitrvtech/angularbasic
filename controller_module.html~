@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<body>
+
+
+<div data-ng-app="myapp"  data-ng-controller="mycontroller">
+
+{{fname}}
+
+</div>
+<script>
+var app = angular.module('myapp', []);
+app.controller('mycontroller', function($scope){
+	$scope.fname='rvtechnologies';
+});
+</script>
+</body>
+</html>
